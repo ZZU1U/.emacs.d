@@ -1,0 +1,32 @@
+;; ~/.emacs.d/templates
+
+fundamental-mode ;; Available everywhere
+
+(today (format-time-string "%Y-%m-%d"))
+
+typst-ts-mode
+;; mathAn lecture
+(ml "#import \"@preview/cetz:0.3.1\"
+#import \"@preview/cetz-plot:0.1.0\"
+#import \"@preview/mannot:0.1.0\": *
+#show: mannot-init
+#set text(lang: \"ru\", size: 14pt)
+#set page(
+  numbering: \"1\",
+  number-align: center,
+)
+#set heading(numbering: \"1.\")
+#set math.equation(numbering: \"(1)\")
+#let arcctg = \"arcctg\"
+#let arctg = \"arctg\"
+#let pm = $plus.minus$
+#let mp = $minus.plus$
+
+#align(center, text(24pt)[
+    *" (s title) "*
+])
+
+#outline()")
+
+;; mathAn plot
+(mp )

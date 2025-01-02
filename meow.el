@@ -1,9 +1,14 @@
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
   (meow-motion-overwrite-define-key
-   ;; '("j" . meow-next)
-   ;; '("k" . meow-prev)
-   '("<escape>" . ignore))
+   '("j" . meow-next)
+   '("k" . meow-prev)
+   '("<escape>" . ignore)
+   '("}" . persp-next)
+   '("{" . persp-prev)
+   '("<" . previous-buffer)
+   '(">" . next-buffer))
+
   (meow-leader-define-key
    ;; SPC j/k will run the original command in MOTION state.
    '("j" . "H-j")
@@ -43,6 +48,7 @@
    '("b" . meow-back-word)
    '("B" . meow-back-symbol)
    '("c" . meow-change)
+   '("/" . avy-goto-char)
    '("d" . meow-delete)
    '("D" . meow-backward-delete)
    '("e" . meow-next-word)
@@ -82,6 +88,10 @@
    '("Y" . meow-sync-grab)
    '("z" . meow-pop-selection)
    '("'" . repeat)
+   '("}" . persp-next)
+   '("{" . persp-prev)
+   '("<" . previous-buffer)
+   '(">" . next-buffer)
    '("<escape>" . ignore)))
 
 (use-package meow-tree-sitter)
@@ -91,5 +101,7 @@
   :demand t
   :config
   (meow-setup)
+  ;; (meow-setup-indicator)
+  (setq meow-use-clipboard t)
   ;; turn it on, baby
   (meow-global-mode 1))
