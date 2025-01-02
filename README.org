@@ -1,6 +1,8 @@
 * My *beautiful* Emacs
 
 [[./src/pic.png]]
+[[./src/uni.png]]
+[[./src/algo.png]]
 
 Including:
 - [[https://github.com/ichernyshovvv/enlight][enlight]] dashboard
