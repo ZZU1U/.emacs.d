@@ -1,0 +1,16 @@
+* My *beautiful* Emacs
+
+[[./src/pic.png]]
+
+Including:
+- [[https://github.com/ichernyshovvv/enlight][enlight]] dashboard
+- [[https://github.com/minad/tempel][tempel]] templates with examples
+- [[https://github.com/meow-edit/meow][meow]] modal keybindings
+- [[https://protesilaos.com/emacs/modus-themes][dark theme]]
+- jinx grammar checker (RU + US)
+- [[https://protesilaos.com/emacs/denote][denote]] notes management
+
+For writing I *don't use org mode* cause it's too bloated
+instead i use:
+- [[https://typst.app][typst]] for math and papers
+- [[https://asciidoc.org][asciidoc]] for code notes and pure digital notes /it's just lighter/

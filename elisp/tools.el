@@ -161,6 +161,4 @@
 ;; The package is young and doesn't have comprehensive coverage.
 (use-package tempel-collection)
 
-(use-package yasnippet-snippets)
-
 (load-file "~/.emacs.d/elisp/denotes.el")
